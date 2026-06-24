@@ -28,7 +28,7 @@
 
   <!-- ===== NAV ===== -->
   <header style="position:sticky; top:0; z-index:50; background:radial-gradient(150% 220% at 50% -10%, #4a3320 0%, #311f12 52%, #241710 100%); border-bottom:1px solid rgba(0,0,0,0.25);">
-    <div style="max-width:1440px; margin:0 auto; display:flex; align-items:center; gap:24px; padding:28px clamp(16px,3vw,36px);">
+    <div style="max-width:1440px; margin:0 auto; display:flex; align-items:center; gap:24px; padding:28px calc(clamp(16px,3vw,36px) + 112px);">
     <nav style="flex:1; display:flex; align-items:center; gap:30px; justify-content:flex-start;">
       <a href="#cookies" style="text-decoration:none; color:#ecdcc4; font-weight:500; font-size:15px;">Our Cookies</a>
       <a href="#solutions" style="text-decoration:none; color:#ecdcc4; font-weight:500; font-size:15px;">Packaging</a>
@@ -47,7 +47,7 @@
       </a>
     </nav>
     <a href="#top" style="flex:0 0 auto; position:relative; align-self:stretch; width:172px; text-decoration:none;">
-      <img src="uploads/logo.png" alt="The Graceful Cookie" style="position:absolute; left:50%; top:-4px; transform:translateX(-50%); height:209px; width:auto; display:block; z-index:2;">
+      <img src="uploads/logo.png" alt="The Graceful Cookie" style="position:absolute; left:50%; top:-4px; transform:translateX(-50%); height:178px; width:auto; display:block; z-index:2;">
     </a>
     <nav style="flex:1; display:flex; align-items:center; gap:30px; justify-content:flex-end;">
       <a href="https://thegracefulcookie.com/our-story" style="text-decoration:none; color:#ecdcc4; font-weight:500; font-size:15px;">Our Story</a>
@@ -58,29 +58,25 @@
   </header>
 
   <!-- ===== HERO ===== -->
-  <section id="top" style="position:relative; padding:clamp(48px,7vw,96px) clamp(16px,3vw,36px) clamp(40px,5vw,72px); max-width:1440px; margin:0 auto;">
-    <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:clamp(4px,1vw,16px);">
-      <div style="flex:1 1 440px; min-width:300px;">
-        <div style="display:inline-flex; align-items:center; gap:9px; background:#f3e7d2; color:#8a5021; padding:8px 16px; border-radius:999px; font-size:13px; font-weight:600; letter-spacing:0.4px; text-transform:uppercase;">
-          <span style="width:7px; height:7px; border-radius:50%; background:var(--accent,#b96e2e); display:inline-block;"></span>
-          Clean label · Preservative-free
-        </div>
-        <h1 style="font-family:'Quicksand',sans-serif; font-weight:700; font-size:clamp(36px,4.8vw,62px); line-height:1.06; letter-spacing:-0.01em; margin:36px 0 0;">
+  <section id="top" style="position:relative; box-sizing:border-box; min-height:calc(100svh - 150px); display:flex; flex-direction:column; justify-content:center; padding:24px clamp(16px,3vw,36px); max-width:1440px; margin:0 auto;">
+    <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:flex-start; gap:clamp(28px,3.5vw,64px);">
+      <div style="flex:0 1 600px; min-width:300px; margin-left:112px;">
+        <h1 style="font-family:'Quicksand',sans-serif; font-weight:700; font-size:clamp(24px,2.8vw,36px); line-height:1.08; letter-spacing:-0.01em; margin:0;">
           We turn great desserts<br>into great cookies
         </h1>
-        <p style="font-size:clamp(18px,1.7vw,23px); line-height:1.5; color:#5a4636; max-width:620px; text-wrap:pretty; margin:18px 0 0;">
+        <p style="font-size:clamp(16px,1.4vw,19px); line-height:1.5; color:#5a4636; max-width:470px; text-wrap:pretty; margin:12px 0 0;">
           Artisan cookies inspired by the desserts you love. Blueberry pie, lemon cheesecake, strawberry milkshakes and more — cookies never had it so good.
         </p>
-        <div style="display:flex; flex-wrap:wrap; gap:14px; margin-top:32px;">
+        <div style="display:flex; flex-wrap:wrap; gap:14px; margin-top:22px;">
           <a href="#cookies" style="text-decoration:none; background:var(--accent,#b96e2e); color:#fff; font-weight:600; font-size:16px; padding:15px 28px; border-radius:999px; box-shadow:0 10px 24px rgba(185,110,46,0.28);">Explore our cookies</a>
           <a href="#stores" style="text-decoration:none; background:transparent; color:#2b1d12; font-weight:600; font-size:16px; padding:15px 28px; border-radius:999px; border:1.5px solid rgba(43,29,18,0.22);">Find a store</a>
         </div>
-        <div style="display:flex; align-items:center; gap:40px; margin-top:22px; flex-wrap:wrap;">
-        <div style="display:flex; gap:28px; flex-wrap:wrap; align-items:stretch; padding:11px 0; border-top:1px solid rgba(43,29,18,0.16); border-bottom:1px solid rgba(43,29,18,0.16);">
+        <div style="display:flex; align-items:center; gap:40px; margin-top:10px; flex-wrap:wrap;">
+        <div style="display:flex; gap:28px; flex-wrap:wrap; align-items:stretch; padding:11px 0; border-top:1px solid rgba(43,29,18,0.38); border-bottom:1px solid rgba(43,29,18,0.38);">
           <div style="text-align:center; position:relative; left:11px;"><div style="font-family:'Quicksand',sans-serif; font-weight:700; font-size:26px; line-height:1; color:var(--accent,#b96e2e);">13</div><div style="font-size:13px; color:#7a6552; font-weight:500; line-height:1; margin-top:6px;">Signature flavors</div></div>
-          <div style="width:1px; background:rgba(43,29,18,0.16); margin:-11px 0; align-self:stretch;"></div>
+          <div style="width:1px; background:rgba(43,29,18,0.38); margin:-11px 0; align-self:stretch;"></div>
           <div style="text-align:center;"><div style="font-family:'Quicksand',sans-serif; font-weight:700; font-size:26px; line-height:1; color:var(--accent,#b96e2e);">0</div><div style="font-size:13px; color:#7a6552; font-weight:500; line-height:1; margin-top:6px;">Preservatives</div></div>
-          <div style="width:1px; background:rgba(43,29,18,0.16); margin:-11px 0; align-self:stretch;"></div>
+          <div style="width:1px; background:rgba(43,29,18,0.38); margin:-11px 0; align-self:stretch;"></div>
           <div style="text-align:center; position:relative; left:-11px;"><div style="font-family:'Quicksand',sans-serif; font-weight:700; font-size:26px; line-height:1; color:var(--accent,#b96e2e);">100%</div><div style="font-size:13px; color:#7a6552; font-weight:500; line-height:1; margin-top:6px;">Real butter</div></div>
         </div>
         <div style="display:flex; flex-direction:column; align-items:center; gap:9px; margin-left:10px;">
@@ -89,8 +85,8 @@
         </div>
         </div>
       </div>
-      <div style="flex:0 1 460px; min-width:300px; position:relative; display:flex; justify-content:flex-start;">
-        <div style="position:relative; width:min(484px,88vw); aspect-ratio:1/1; margin-left:-180px;">
+      <div style="flex:0 0 auto; min-width:300px; position:relative; display:flex; justify-content:flex-start;">
+        <div style="position:relative; width:min(390px,68vw); aspect-ratio:1/1; margin-left:24px; top:0px;">
           <div style="position:absolute; inset:0; border-radius:50%; background:radial-gradient(circle at 50% 40%, #f7ecd6, #efdcbd);"></div>
           <img src="https://thegracefulcookie.com/wp-content/uploads/2026/04/strawberrymilkshake.webp" alt="Strawberry milkshake cookie" style="position:absolute; inset:6%; width:88%; height:88%; object-fit:contain; filter:drop-shadow(0 24px 36px rgba(80,45,15,0.28)); animation:gc-floaty 7s ease-in-out infinite;">
           <div style="position:absolute; inset:0; animation:gc-orbit 34s linear infinite;">
@@ -113,17 +109,18 @@
     <div style="background:radial-gradient(120% 320% at 50% -40%, #4a3320 0%, #311f12 52%, #241710 100%); color:#faf4e9; padding:16px 0; overflow:hidden; white-space:nowrap;">
       <div style="display:inline-flex; gap:0; animation:gc-marquee 26s linear infinite;">
         <span style="display:inline-flex; gap:0; font-family:'Quicksand',sans-serif; font-style:italic; font-size:19px;">
-          <span style="padding:0 28px;">Clean Label</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Real Butter</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Small Batch</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Baked Fresh</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Preservative-Free</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Crafted With Grace</span><span style="color:var(--accent,#b96e2e);">✦</span>
+          <span style="padding:0 28px;">Clean Label</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Real Butter</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Small Batch</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Baked Fresh</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Preservative-Free</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Crafted With Grace</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Quality Ingredients</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Made To Share</span><span style="color:var(--accent,#b96e2e);">✦</span>
         </span>
         <span style="display:inline-flex; gap:0; font-family:'Quicksand',sans-serif; font-style:italic; font-size:19px;">
-          <span style="padding:0 28px;">Clean Label</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Real Butter</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Small Batch</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Baked Fresh</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Preservative-Free</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Crafted With Grace</span><span style="color:var(--accent,#b96e2e);">✦</span>
+          <span style="padding:0 28px;">Clean Label</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Real Butter</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Small Batch</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Baked Fresh</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Preservative-Free</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Crafted With Grace</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Quality Ingredients</span><span style="color:var(--accent,#b96e2e);">✦</span><span style="padding:0 28px;">Made To Share</span><span style="color:var(--accent,#b96e2e);">✦</span>
+        </span>
         </span>
       </div>
     </div>
   </sc-if>
 
   <!-- ===== COOKIE LINEUP ===== -->
-  <section id="cookies" style="padding:clamp(64px,7vw,104px) 0 clamp(56px,6vw,88px); max-width:1480px; margin:0 auto;">
+  <section id="cookies" style="padding:clamp(64px,7vw,104px) 0 clamp(56px,6vw,88px); max-width:1280px; margin:0 auto;">
     <div data-reveal style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:20px; padding:0 clamp(16px,3vw,36px);">
       <div>
         <div style="font-family:'Caveat',cursive; color:var(--accent,#b96e2e); font-size:34px; line-height:1;">our flavors</div>
